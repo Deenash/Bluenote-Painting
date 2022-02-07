@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <title>Bluenote Painting</title>
+    <!-- Using Foundation CDN -->
+    <!-- Compressed CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css"
+        crossorigin="anonymous">
+    <!-- Compressed JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-x grid-padding-x">
+            <div class="large-12 cell">
+                <div class="gradient">
+                    <img src="https://bluenotepainting.com/wp-content/uploads/2016/10/bluenote-painting-logo.png"
+                        alt="bluenote painting logo" class="logo"><br>
+                </div>
+                <!-- company address -->
+                <address>
+                    <p>PO Box 984, Oregon City, OR 97045 |<strong> PH: 503-246-8888</strong> | OR CCB#198732</p>
+                </address>
+                <hr>
+            </div>
+        </div>
+        <div class="grid-x grid-padding-x">
+            <div class="large-12 medium-12 cell">
+                <h2>Contact Information:</h2>
+                <form>
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-6 medium-6 cell">
+                            <h4>CUSTOMER TYPE</h4>
+                            <input type="radio" name="customer-type" value="new" id="new-customer" requried
+                                checked="checked">
+                            <label for="new-customer">NEW</label>
+                            <input type="radio" name="customer-type" value="existing" id="existing-customer">
+                            <label for="existing-customer">EXISTING</label>
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-6 medium-6 cell">
+                            <label>First Name</label>
+                            <input type="text" id="fname" placeholder="first name" required />
+                        </div>
+                        <div class="large-6 medium-6 cell">
+                            <label>Last Name</label>
+                            <input type="text" id="lname" placeholder="last name" />
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-6 medium-6 cell">
+                            <label>Street Address</label>
+                            <input type="text" id="street-address" placeholder="street address" />
+                        </div>
+                        <div class="large-6 medium-6 cell">
+                            <label>Apartment / Office #</label>
+                            <input type="text" id="apt-number" placeholder="building number" />
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-4 medium-4 cell">
+                            <label>City</label>
+                            <input type="text" id="city" placeholder="city" />
+                        </div>
+                        <div class="large-4 medium-4 cell">
+                            <label>State</label>
+                            <select name="state" id="state">
+                                <option value="Alabama">AL</option>
+                                <option value="Alaska">AK</option>
+                                <option value="American Samoa">AS</option>
+                                <option value="Arizona">AZ</option>
+                                <option value="Arkansas">AR</option>
+                                <option value="California">CA</option>
+                                <option value="Colorado">CO</option>
+                                <option value="Connecticut">CT</option>
+                                <option value="Delaware">DE</option>
+                                <option value="District Of Columbia">DC</option>
+                                <option value="Federated States Of Micronesia">FM</option>
+                                <option value="Florida">FL</option>
+                                <option value="Georgia">GA</option>
+                                <option value="Guam">GU</option>
+                                <option value="Hawaii">HI</option>
+                                <option value="Idaho">ID</option>
+                                <option value="Illinois">IL</option>
+                                <option value="Indiana">IN</option>
+                                <option value="Iowa">IA</option>
+                                <option value="Kansas">KS</option>
+                                <option value="Kentucky">KY</option>
+                                <option value="Louisiana">LA</option>
+                                <option value="Maine">ME</option>
+                                <option value="Marshall Islands">MH</option>
+                                <option value="Maryland">MD</option>
+                                <option value="Massachusetts">MA</option>
+                                <option value="Michigan">MI</option>
+                                <option value="Minnesota">MN</option>
+                                <option value="Mississippi">MS</option>
+                                <option value="Missouri">MO</option>
+                                <option value="Montana">MT</option>
+                                <option value="Nebraska">NE</option>
+                                <option value="Nevada">NV</option>
+                                <option value="New Hampshire">NH</option>
+                                <option value="New Jersey">NJ</option>
+                                <option value="New Mexico">NM</option>
+                                <option value="New York">NY</option>
+                                <option value="North Carolina">NC</option>
+                                <option value="North Dakota">ND</option>
+                                <option value="Northern Mariana Islands">MP</option>
+                                <option value="Ohio">OH</option>
+                                <option value="Oklahoma">OK</option>
+                                <option value="Oregon">OR</option>
+                                <option value="Palau">PW</option>
+                                <option value="Pennsylvania">PA</option>
+                                <option value="Puerto Rico">PR</option>
+                                <option value="Rhode Island">RI</option>
+                                <option value="South Carolina">SC</option>
+                                <option value="South Dakota">SD</option>
+                                <option value="Tennessee">TN</option>
+                                <option value="Texas">TX</option>
+                                <option value="Utah">UT</option>
+                                <option value="Vermont">VT</option>
+                                <option value="Virgin Islands">VI</option>
+                                <option value="Virginia">VA</option>
+                                <option value="Washington">WA</option>
+                                <option value="West Virginia">WV</option>
+                                <option value="Wisconsin">WI</option>
+                                <option value="Wyoming">WY</option>
+                            </select>
+                        </div>
+                        <div class="large-4 medium-4 cell">
+                            <label>ZipCode</label>
+                            <input type="number" id="zip" placeholder="ZipCode" minlength="5" maxlength="5" />
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-12 medium-12 cell">
+                            <div class="grid-x">
+                                <label>Email-Id</label>
+                                <div class="input-group">
+                                    <input type="email" placeholder="jon@doe.com" class="input-group-field" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-6 medium-6 cell">
+                            <h6>PROJECT ADDRESS SAME AS ABOVE ?</h6>
+                            <input type="radio" name="proj-address" value="yes" id="proj-address-yes" requried
+                                checked="checked" onclick="hideAltAddress()">
+                            <label for="proj-address-yes">YES</label>
+                            <input type="radio" name="proj-address" value="no" id="proj-address-no"
+                                onclick="showAltAddress()">
+                            <label for="proj-address-no">NO</label>
+                        </div>
+                    </div>
+                    <section id="alternate-address" class="hidden">
+                        <div class="grid-x grid-padding-x">
+                            <div class="large-6 medium-6 cell">
+                                <label>Street Address</label>
+                                <input type="text" id="alt-street-address" placeholder="street address" />
+                            </div>
+                            <div class="large-6 medium-6 cell">
+                                <label>Apartment / Office #</label>
+                                <input type="text" id="alt-apt-number" placeholder="building number" />
+                            </div>
+                        </div>
+                        <div class="grid-x grid-padding-x">
+                            <div class="large-4 medium-4 cell">
+                                <label>City</label>
+                                <input type="text" id="alt-city" placeholder="city" />
+                            </div>
+                            <div class="large-4 medium-4 cell">
+                                <label>State</label>
+                                <select name="alt-state" id="alt-state">
+                                    <option value="Alabama">AL</option>
+                                    <option value="Alaska">AK</option>
+                                    <option value="American Samoa">AS</option>
+                                    <option value="Arizona">AZ</option>
+                                    <option value="Arkansas">AR</option>
+                                    <option value="California">CA</option>
+                                    <option value="Colorado">CO</option>
+                                    <option value="Connecticut">CT</option>
+                                    <option value="Delaware">DE</option>
+                                    <option value="District Of Columbia">DC</option>
+                                    <option value="Federated States Of Micronesia">FM</option>
+                                    <option value="Florida">FL</option>
+                                    <option value="Georgia">GA</option>
+                                    <option value="Guam">GU</option>
+                                    <option value="Hawaii">HI</option>
+                                    <option value="Idaho">ID</option>
+                                    <option value="Illinois">IL</option>
+                                    <option value="Indiana">IN</option>
+                                    <option value="Iowa">IA</option>
+                                    <option value="Kansas">KS</option>
+                                    <option value="Kentucky">KY</option>
+                                    <option value="Louisiana">LA</option>
+                                    <option value="Maine">ME</option>
+                                    <option value="Marshall Islands">MH</option>
+                                    <option value="Maryland">MD</option>
+                                    <option value="Massachusetts">MA</option>
+                                    <option value="Michigan">MI</option>
+                                    <option value="Minnesota">MN</option>
+                                    <option value="Mississippi">MS</option>
+                                    <option value="Missouri">MO</option>
+                                    <option value="Montana">MT</option>
+                                    <option value="Nebraska">NE</option>
+                                    <option value="Nevada">NV</option>
+                                    <option value="New Hampshire">NH</option>
+                                    <option value="New Jersey">NJ</option>
+                                    <option value="New Mexico">NM</option>
+                                    <option value="New York">NY</option>
+                                    <option value="North Carolina">NC</option>
+                                    <option value="North Dakota">ND</option>
+                                    <option value="Northern Mariana Islands">MP</option>
+                                    <option value="Ohio">OH</option>
+                                    <option value="Oklahoma">OK</option>
+                                    <option value="Oregon">OR</option>
+                                    <option value="Palau">PW</option>
+                                    <option value="Pennsylvania">PA</option>
+                                    <option value="Puerto Rico">PR</option>
+                                    <option value="Rhode Island">RI</option>
+                                    <option value="South Carolina">SC</option>
+                                    <option value="South Dakota">SD</option>
+                                    <option value="Tennessee">TN</option>
+                                    <option value="Texas">TX</option>
+                                    <option value="Utah">UT</option>
+                                    <option value="Vermont">VT</option>
+                                    <option value="Virgin Islands">VI</option>
+                                    <option value="Virginia">VA</option>
+                                    <option value="Washington">WA</option>
+                                    <option value="West Virginia">WV</option>
+                                    <option value="Wisconsin">WI</option>
+                                    <option value="Wyoming">WY</option>
+                                </select>
+                            </div>
+                            <div class="large-4 medium-4 cell">
+                                <label>ZipCode</label>
+                                <input type="number" id="alt-zip" placeholder="ZipCode" minlength="5" maxlength="5" />
+                            </div>
+                        </div>
+                    </section>
+                    <hr>
+                    <h2>Scope of Work</h2>
+                    <h5>Bluenote Painting hereby submits the following specifications and estimates to paint and/or
+                        improve the premises:</h5>
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-6 medium-6 cell">
+                            <label>Check these out</label>
+                            <input id="exterior" type="checkbox"><label for="exterior" onmouseup="showHideExteriorList()">EXTERIOR</label>
+                            <input id="interior" type="checkbox"><label for="interior" onmouseup="showHideInteriorList()">INTERIOR</label>
+                        </div>
+                    </div>
+                    <section id="interior-spec" class="hidden">
+                        <div class="grid-x grid-padding-x">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th width="15%">Check for 'YES'</th>
+                                        <th>Interior Specifications</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>Remove all switch plates, door hardware, fixtures, etc., and replace after
+                                            paint
+                                            is dry.</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>Remove loose peeling paint by hand scraping, wire brushing, hand sanding, or
+                                            power sanding.</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>Feather sand bare wood surfaces to make the finish smoother and to make
+                                            paint
+                                            voids less visible.</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>Fill holes, cracks, or specified damaged areas in the wall surface with an
+                                            appropriate repair compound.</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>Re-set or replace loose or popped nails as needed and fill to a flush
+                                            surface.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>Patch holes, cracks, or any specified damaged areas in the wall surfaces
+                                            with an
+                                            appropriate repair compound.</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>Replace failed caulking on window and door openings, and wall to trim
+                                            joints.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>In kitchen and baths, replace failed caulking on counter top to wall seams
+                                            and
+                                            tub or shower to wall joints.</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>Mask off and cover all surfaces and objects, as needed, to protect them from
+                                            paint and primer.</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>After all the preparation is completed, apply a full coat of primer to all
+                                            bare
+                                            and repaired surfaces.</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>Apply a full coat of primer to surfaces where adhesion may be a problem.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>Apply up to 2 coats of paint or finish to all applicable surfaces.
+                                            Additional
+                                            coats will be charged at $45/hr. + materials.</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>Apply a full coat of enamel to all previously enameled trim & wall surfaces.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>Apply a full coat of varnish to all stained doors.</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>Clean up and remove any debris and replace objects previously removed or
+                                            relocated.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <label>
+                                Additional Information
+                                <textarea id="interior-more-text" placeholder="None" rows="5" cols="100%"></textarea>
+                            </label>
+                        </div>
+                    </section>
+                    <section id="exterior-spec" class="hidden">
+                        <div class="grid-x grid-padding-x">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th width="15%">Check for 'YES'</th>
+                                        <th>Exterior Specifications</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>Pressure wash and clean all surfaces to be painted. This includes killing
+                                            all
+                                            moss/mold/mildew on surfaces.</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>Remove loose peeling paint by hand scraping or wire brushing as necessary.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>Fill holes, or specified damaged areas in the wood surfaces as specified
+                                            below.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>Re-set or replace loose or popped nails as needed.</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>Patch holes, cracks, or any specified damaged areas in stucco surfaces as
+                                            needed.</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>Replace all failed caulking around windows, doors, and siding joints.</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>Replace any loose glazing material on painted windows as needed.</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>Mask off and cover surfaces, as needed, to protect them from paint and
+                                            primer.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>Apply a full coat of primer to all bare wood or peeling surfaces to be
+                                            painted.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>Apply 2 coats of Super Paint by Sherwin-Williams in satin sheen to all
+                                            surfaces.
+                                            Additional coats will be charged at $45/hr. + materials.</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>Soffits to be painted same color as body.</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>Apply a full coat of exterior varnish to all stained doors.</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>Clean up and remove any debris and replace objects previously removed or
+                                            relocated.</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>Inspect finished job with our customer and correct any items of concern to
+                                            assure quality control.</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>Home presumed positive for presence of Lead Paint based on age. Lead safe
+                                            work
+                                            practices must be adhered to.</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;"><input id="int-item-1" type="checkbox"></td>
+                                        <td>All work performed by Bluenote Painting employees covered by 5-Year Warranty
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <label>
+                                Additional Information
+                                <textarea id="exterior-more-text" placeholder="None" rows="5" cols="100%"></textarea>
+                            </label>
+                        </div>
+                    </section>
+                    <hr>
+                    <div class="grid-x grid-padding-x">
+                        <div class="row">
+                            <div class="columns">
+                                <table class="unstriped">
+                                    <tbody>
+                                        <tr>
+                                            <td width="50%">
+                                                <p>
+                                                    <strong>WE PROPOSE </strong>to furnish material, equipment and labor
+                                                    in accordance with the above specifications for the sum below.
+                                                    Credit or Debit cards incur an additional 3.25% charge.
+                                                </p>
+                                                <p>
+                                                    <center>&#36;<span
+                                                            style="border-bottom: 2px solid black; padding-left: 150px">&nbsp;</span><strong>DOLLARS</strong>
+                                                    </center>
+                                                </p>
+                                                <p>
+                                                    <strong>NOTE:</strong> This proposal may be withdrawn if not
+                                                    accepted within 14 days.
+                                                    <br>
+                                                <div class="row">
+                                                    <div class="medium-3 columns">
+                                                        <label for="date" class="text-left">Date</label>
+                                                    </div>
+                                                    <div class="medium-3 columns">
+                                                        <input type="date" id="date" class="text-left">
+                                                    </div>
+                                                </div>
+                                                </p>
+                                                <p>
+                                                    Respectfully Submitted by: <span class="sign">Rick Thomas</span>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    <strong>WE ACCEPT </strong> the prices, specifications, and terms as
+                                                    stated in this bid proposal approved. This signed document will
+                                                    serve as a legally binding contract. We have received the following
+                                                    documents required by law: Consumer Protection Notice, Construction
+                                                    Liens, Notice of Procedure.
+                                                </p>
+                                                <p>
+                                                    <strong>10% Deposit due at signing. </strong>Payment terms Net 15,
+                                                    18% APR
+                                                </p>
+                                                <p>
+                                                <div class="grid-container">
+                                                    <div class="grid-x grid-padding-x">
+                                                        <div class="medium-8 cell">
+                                                            <label>Approved and accepted<br>(owner or owner’s authorized
+                                                                agent) </label>
+                                                            <input type="text" class="bottom-line">
+                                                        </div>
+                                                        <div class="medium-4 cell">
+                                                            <label><br>Date</label>
+                                                            <input type="text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </p>
+                                                <p>
+                                                <div class="grid-container">
+                                                    <div class="grid-x grid-padding-x">
+                                                        <div class="medium-8 cell">
+                                                            <label>Approved and accepted<br>(second owner – if any)
+                                                            </label>
+                                                            <input type="text">
+                                                        </div>
+                                                        <div class="medium-4 cell">
+                                                            <label><br>Date</label>
+                                                            <input type="text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <input type="button" class="success button" onclick="submitPage()" value="Print and Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/controls.js"></script>
+</body>
+
+</html>

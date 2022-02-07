@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt|Shadows+Into+Light|Cedarville+Cursive');
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: .5px;
+}
+
+/* Global element styles */
+/* ---------------------------------------- */
+
+address {
+    font-size: 1.0rem;
+    font-style: unset;
+    text-align: right;
+}
+
+/* .content {
+    margin-top: 4rem;
+} */
+
+.logo {
+    height: 150px;
+    width: auto;
+}
+
+.gradient {
+    background: linear-gradient(90deg, #FFFFFF 0%, #6c8296 40%, #406284 80%, #0e1e34 100%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.sign{
+    font-family: 'Rock Salt', cursive;
+}
+
+td {
+    border: 1px solid black;
+}
+
+.bottom-line {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: black
+}
+
+.hidden {
+    display: none;
+}
